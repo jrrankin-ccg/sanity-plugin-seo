@@ -70,12 +70,12 @@
     "@sanity/eslint-config-studio": "^3.0.1",
     "@sanity/pkg-utils": "^3.0.0",
     "@sanity/plugin-kit": "^3.1.10",
-    "@sanity/ui": "^3.1.11",
+    "@sanity/ui": "^4.4.10",
     "@types/jest": "^29.5.10",
     "@types/react": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
-    "@vercel/node": "^5.0.0",
+    "@vercel/node": "^27.0.2",
     "autoprefixer": "^10.4.11",
     "eslint": "^8.53.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -102,27 +102,28 @@
     "react-dom": "^19.2.2",
     "react-is": "^19.2.2",
     "rimraf": "^5.0.5",
-    "sanity": "^5.0.0",
+    "sanity": "^6.9.2",
     "styled-components": "^6.1.15",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "@sanity/icons": "^3.7.4",
-    "@sanity/ui": "^3",
-    "react": "^18 || ^19",
-    "react-dom": "^18 || ^19",
-    "sanity": "^3 || ^4 || ^5",
-    "styled-components": "^6"
+    "@sanity/ui": "^4",
+    "react": "^19.2",
+    "react-dom": "^19.2",
+    "sanity": "^6.9.2",
+    "styled-components": "^6.1"
   },
   "sanityPlugin": {
     "verifyPackage": {
       "nodeEngine": false,
-      "sanityV2Json": false
+      "sanityV2Json": false,
+      "tsconfig": false
     }
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22.12"
   },
   "publishConfig": {
     "access": "public"

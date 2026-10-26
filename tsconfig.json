@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "esnext",
     "emitDeclarationOnly": true,
-    "downlevelIteration": true,
     "declaration": true,
     "allowSyntheticDefaultImports": true,
     "rootDir": ".",
@@ -13,19 +12,19 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noImplicitAny": false,
     "jsx": "preserve",
-    "baseUrl": ".",
     "outDir": "dist",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@schemas/*": ["src/schemas/*"],
-      "@patterns/*": ["src/patterns/*"],
-      "@utils/*": ["src/utils/*"]
+      "@components/*": ["./src/components/*"],
+      "@schemas/*": ["./src/schemas/*"],
+      "@patterns/*": ["./src/patterns/*"],
+      "@utils/*": ["./src/utils/*"]
     },
+    "types": ["jest", "node"],
     "incremental": true
   },
   "include": ["./src", "./package.config.ts", "./.eslintrc.js", "./test", "./api"],

@@ -38,7 +38,7 @@ export default function AIGenerateButton({ field, focusKeyword = "", onGenerate 
   if (!config.aiFeature) return null;
 
   return (
-    <Stack space={1}>
+    <Stack gap={1}>
       <Flex align="center" gap={2}>
         <Button
           mode="ghost"

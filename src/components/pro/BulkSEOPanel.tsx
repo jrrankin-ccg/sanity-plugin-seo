@@ -430,7 +430,7 @@ export default function BulkSEOPanel() {
     <ProGate feature="SEO Optimizer" isPro={isPro} variant="page">
       <Box style={{ minHeight: "100vh", background: "var(--card-bg-color)", padding: "32px 40px" }}>
         <div style={{ maxWidth: 1040, margin: "0 auto" }}>
-          <Stack space={5}>
+          <Stack gap={5}>
             <div
               style={{
                 background: "var(--card-bg-color)",
@@ -664,7 +664,7 @@ export default function BulkSEOPanel() {
                   <div />
                 </div>
 
-                <Stack space={3}>
+                <Stack gap={3}>
                   {paginatedDocs.map((doc) => (
                     <BulkDocRow
                       key={doc._id}

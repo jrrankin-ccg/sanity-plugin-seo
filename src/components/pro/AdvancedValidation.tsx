@@ -270,7 +270,7 @@ export default function AdvancedValidation({ value, onChange }: Props) {
           boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
         }}
       >
-        <Stack space={4}>
+        <Stack gap={4}>
           <Flex align="center" gap={4} style={{ marginBottom: 4 }}>
             {checks.length > 0 && (
               <ProgressRing
@@ -283,7 +283,7 @@ export default function AdvancedValidation({ value, onChange }: Props) {
               />
             )}
 
-            <Stack space={3} style={{ flexGrow: 1 }}>
+            <Stack gap={3} style={{ flexGrow: 1 }}>
               <Text size={2} weight="bold" style={{ color: "var(--card-fg-color)" }}>
                 Advanced Validation
               </Text>
@@ -317,7 +317,7 @@ export default function AdvancedValidation({ value, onChange }: Props) {
             />
           )}
 
-          <Stack space={1} style={{ marginTop: 2 }}>
+          <Stack gap={1} style={{ marginTop: 2 }}>
             {checks.length === 0 ? (
               <Text size={1} muted style={{ padding: "12px 0" }}>
                 Running checks…

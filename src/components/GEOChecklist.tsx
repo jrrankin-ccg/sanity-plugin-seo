@@ -83,7 +83,7 @@ export default function GEOChecklist({ value }: { value: Record<string, any> | u
         boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
       }}
     >
-      <Stack space={4}>
+      <Stack gap={4}>
         <Flex align="center" gap={4} style={{ marginBottom: 4 }}>
           <ProgressRing
             value={passCount}
@@ -94,7 +94,7 @@ export default function GEOChecklist({ value }: { value: Record<string, any> | u
             fontSize="14px"
           />
 
-          <Stack space={2} style={{ flexGrow: 1 }}>
+          <Stack gap={2} style={{ flexGrow: 1 }}>
             <Text size={2} weight="bold" style={{ color: "var(--card-fg-color)" }}>
               GEO Score AI Search Visibility
             </Text>
@@ -104,7 +104,7 @@ export default function GEOChecklist({ value }: { value: Record<string, any> | u
           </Stack>
         </Flex>
 
-        <Stack space={3} style={{ marginTop: 4 }}>
+        <Stack gap={3} style={{ marginTop: 4 }}>
           {items.map((item) => {
             const hasDescription = !item.pass && item.description;
             const Icon = item.pass ? (

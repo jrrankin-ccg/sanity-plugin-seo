@@ -344,7 +344,7 @@ export default function SERPPreview({ value }: Props) {
           boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
         }}
       >
-        <Stack space={4}>
+        <Stack gap={4}>
           <Flex align="center" justify="space-between">
             <Text size={2} weight="bold" style={{ color: "var(--card-fg-color)" }}>
               SERP Preview

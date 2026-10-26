@@ -301,7 +301,7 @@ export default function SchemaWizardFieldInput({ value, onChange }: ObjectInputP
               />
               FAQ Items
             </div>
-            <Stack space={3}>
+            <Stack gap={3}>
               {faqItems.map((item, i) => (
                 // eslint-disable-next-line react/no-array-index-key
                 <div
@@ -347,7 +347,7 @@ export default function SchemaWizardFieldInput({ value, onChange }: ObjectInputP
                       <TrashIcon />
                     </button>
                   )}
-                  <Stack space={3}>
+                  <Stack gap={3}>
                     <div>
                       <div
                         style={{

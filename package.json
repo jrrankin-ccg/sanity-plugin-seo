@@ -35,17 +35,15 @@
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
       "source": "./src/index.ts",
-      "import": "./dist/index.esm.js",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.js",
-      "default": "./dist/index.esm.js"
+      "default": "./dist/index.mjs"
     },
     "./package.json": "./package.json"
   },
   "main": "./dist/index.js",
-  "module": "./dist/index.esm.js",
-  "source": "./src/index.ts",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
@@ -65,19 +63,21 @@
     "test": "jest"
   },
   "dependencies": {
+    "@sanity/icons": "^3.8.0",
+    "@sanity/ui": "^4.4.10",
     "@supabase/supabase-js": "^2.108.2"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^3.0.1",
-    "@sanity/pkg-utils": "^3.0.0",
+    "@sanity/pkg-utils": "^11.0.17",
     "@sanity/plugin-kit": "^3.1.10",
-    "@sanity/ui": "^4.4.10",
     "@types/jest": "^29.5.10",
     "@types/react": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
     "@vercel/node": "^27.0.2",
     "autoprefixer": "^10.4.11",
+    "esbuild": "^0.28.2",
     "eslint": "^8.53.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -105,12 +105,10 @@
     "rimraf": "^5.0.5",
     "sanity": "^6.9.2",
     "styled-components": "^6.1.15",
-    "ts-jest": "^29.1.1",
-    "typescript": "^5.2.2"
+    "ts-jest": "^29.4.15",
+    "typescript": "^6.0.3"
   },
   "peerDependencies": {
-    "@sanity/icons": "^3.7.4",
-    "@sanity/ui": "^4",
     "react": "^19.2",
     "react-dom": "^19.2",
     "sanity": "^6.9.2",
@@ -120,7 +118,8 @@
     "verifyPackage": {
       "nodeEngine": false,
       "sanityV2Json": false,
-      "tsconfig": false
+      "tsconfig": false,
+      "module": false
     }
   },
   "engines": {

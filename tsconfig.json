@@ -27,6 +27,6 @@
     "types": ["jest", "node"],
     "incremental": true
   },
-  "include": ["./src", "./package.config.ts", "./.eslintrc.js", "./test", "./api"],
+  "include": ["./src", "./package.config.mts", "./.eslintrc.js", "./test", "./api"],
   "exclude": ["node_modules"]
 }

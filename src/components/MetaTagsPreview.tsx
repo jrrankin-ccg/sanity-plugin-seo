@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useWorkspace } from "sanity";
-import { Stack, Card, Flex, Text, Button, Code, Box, useTheme } from "@sanity/ui";
+import { Stack, Card, Flex, Text, Button, Box, useTheme } from "@sanity/ui";
+import { Code } from "@sanity/ui/code";
 import { CodeBlockIcon } from "@sanity/icons";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -114,7 +115,7 @@ export default function MetaTagsPreview({ value }: { value: Record<string, any> 
         boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
       }}
     >
-      <Stack space={4}>
+      <Stack gap={4}>
         <Flex align="center" justify="space-between">
           <Flex align="center" gap={3}>
             <CodeBlockIcon style={{ color: "#64748b", fontSize: 20 }} />

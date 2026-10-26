@@ -490,7 +490,7 @@ export default function SEODashboardPane() {
   return (
     <Box style={{ minHeight: "100vh", background: "var(--card-bg-color)", padding: "32px 40px" }}>
       <div style={{ maxWidth: 1040, margin: "0 auto" }}>
-        <Stack space={5}>
+        <Stack gap={5}>
           <div
             style={{
               background: "var(--card-bg-color)",
@@ -731,7 +731,7 @@ export default function SEODashboardPane() {
                 ))}
               </div>
 
-              <Stack space={2}>
+              <Stack gap={2}>
                 {filtered.length === 0 && (
                   <div
                     style={{

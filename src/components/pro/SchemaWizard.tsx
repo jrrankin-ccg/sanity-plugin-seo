@@ -52,12 +52,12 @@ export default function SchemaWizard({
   return (
     <ProGate feature="Schema.org Wizard (30+ Types)" isPro={isPro}>
       <Card padding={3} radius={2} shadow={1}>
-        <Stack space={4}>
+        <Stack gap={4}>
           <Text size={2} weight="semibold">
             Schema.org Structured Data
           </Text>
 
-          <Stack space={2}>
+          <Stack gap={2}>
             <Text size={1} muted>
               Schema Type
             </Text>
@@ -71,7 +71,7 @@ export default function SchemaWizard({
           </Stack>
 
           {selectedType === "FAQPage" && (
-            <Stack space={3}>
+            <Stack gap={3}>
               <Text size={1} weight="semibold">
                 FAQ Items
               </Text>
@@ -83,7 +83,7 @@ export default function SchemaWizard({
                   radius={2}
                   style={{ border: "1px solid var(--card-border-color)" }}
                 >
-                  <Stack space={2}>
+                  <Stack gap={2}>
                     <Text size={1} muted>
                       Question {i + 1}
                     </Text>
@@ -110,7 +110,7 @@ export default function SchemaWizard({
           )}
 
           {fields.map((field) => (
-            <Stack key={field.name} space={2}>
+            <Stack key={field.name} gap={2}>
               <Text size={1} muted>
                 {field.label}
               </Text>

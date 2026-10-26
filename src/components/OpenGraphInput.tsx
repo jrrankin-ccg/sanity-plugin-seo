@@ -9,7 +9,7 @@ const OpenGraphInput = ({ renderDefault, path, value, ...rest }: ObjectInputProp
   const props = { renderDefault, path, value, ...rest };
 
   return (
-    <Stack space={4}>
+    <Stack gap={4}>
       {renderDefault(props)}
       <SocialPreviewCard value={value as Record<string, any> | undefined} />
     </Stack>

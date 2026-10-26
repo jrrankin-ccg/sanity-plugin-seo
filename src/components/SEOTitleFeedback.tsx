@@ -96,10 +96,10 @@ const SEOTitleFeedback = ({ value, onChange, renderDefault, path, ...rest }: Str
   const props = { value, onChange, renderDefault, path, ...rest };
 
   return (
-    <Stack space={3}>
+    <Stack gap={3}>
       {renderDefault(props)}
       <AIGenerateButton field="title" focusKeyword={focusKeyword} onGenerate={handleAIGenerate} />
-      <Stack space={2}>
+      <Stack gap={2}>
         {feedbackItems.map((item) => (
           <Flex key={item.text} align="center" gap={2}>
             {DOT(item.color)}

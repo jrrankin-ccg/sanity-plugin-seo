@@ -91,7 +91,7 @@ export default function SEOScoreDisplay({ result }: Props) {
         boxShadow: "0 2px 8px rgba(0, 0, 0, 0.04)",
       }}
     >
-      <Stack space={4}>
+      <Stack gap={4}>
         <Flex align="center" gap={4} style={{ marginBottom: 4 }}>
           <ProgressRing
             value={score}
@@ -102,7 +102,7 @@ export default function SEOScoreDisplay({ result }: Props) {
             fontSize="18px"
           />
 
-          <Stack space={3} style={{ flexGrow: 1 }}>
+          <Stack gap={3} style={{ flexGrow: 1 }}>
             <Text size={2} weight="bold" style={{ color: "var(--card-fg-color)" }}>
               SEO Score
             </Text>
@@ -114,7 +114,7 @@ export default function SEOScoreDisplay({ result }: Props) {
           </Stack>
         </Flex>
 
-        <Stack space={3} style={{ marginTop: 4 }}>
+        <Stack gap={3} style={{ marginTop: 4 }}>
           {checks.map((c) => (
             <CheckRow key={c.name} check={c} isDarkMode={isDarkMode} />
           ))}

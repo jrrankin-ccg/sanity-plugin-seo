@@ -108,7 +108,7 @@ export default function WorkflowDashboard() {
     <ProGate feature="SEO Workflow Dashboard" isPro={isPro} variant="page">
       <Box style={{ minHeight: "100vh", background: "var(--card-bg-color)", padding: "32px 40px" }}>
         <div style={{ maxWidth: 1040, margin: "0 auto" }}>
-          <Stack space={5}>
+          <Stack gap={5}>
             <Header
               loading={loading}
               loaded={loaded}
@@ -179,7 +179,7 @@ export default function WorkflowDashboard() {
 
                 {visible.length === 0 && <EmptyState filter={filter} />}
 
-                <Stack space={3}>
+                <Stack gap={3}>
                   {paginatedDocs.map((doc) => (
                     <WorkflowRow
                       key={doc._id}

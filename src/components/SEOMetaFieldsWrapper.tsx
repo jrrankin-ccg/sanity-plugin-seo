@@ -51,7 +51,7 @@ const SEOMetaFieldsWrapper = ({
   const filteredMembers = props.members.filter((m: any) => m.name !== "nofollowAttributes");
 
   return (
-    <Stack space={4}>
+    <Stack gap={4}>
       <SEOScoreDisplay result={scoreResult} />
 
       {(isAllFields || activeGroup === "social") && <GEOChecklist value={value} />}

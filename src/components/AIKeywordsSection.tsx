@@ -51,7 +51,7 @@ export default function AIKeywordsSection({ value, onChange }: Props) {
 
   return (
     <Card padding={3} radius={2} shadow={1}>
-      <Stack space={3}>
+      <Stack gap={3}>
         <Flex align="center" justify="space-between">
           <Text size={2} weight="semibold">
             AI Keyword Suggestions
@@ -73,7 +73,7 @@ export default function AIKeywordsSection({ value, onChange }: Props) {
           </Card>
         )}
         {suggestions.length > 0 && (
-          <Stack space={2}>
+          <Stack gap={2}>
             <Text size={1} muted>
               Click a keyword to add it:
             </Text>
